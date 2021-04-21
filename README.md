@@ -11,5 +11,10 @@ Each project is also shortly explained below the list
 
   - *Covid Friendly Face Detector* [CFFD](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md) 
 
-### Covid Friendly Face Detector (CFFD)
+## Covid Friendly Face Detector (CFFD)
+Because of Covid-19 a very common sight is that everyone has a mask outside their homes. 
+With the face partially covered, old face detectors might not work.
+
+This project implements a CNN-based face detector with a re-trained 22-face-landmarks shape predictor.
+The goal is to being able to detect any face (with or without mask) and predict drowsiness at the detected face.
 
