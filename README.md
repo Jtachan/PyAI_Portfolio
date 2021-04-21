@@ -20,7 +20,7 @@ Documented projects at this repository.<br />
 **Projects yet to upload** (In progress)
   - *Radar 360 view*
   - *Fusion data from radars systems*
-  - *Vehicle Model Predictos (VMP) with 6 DoF*
+  - *Vehicle Model Predictor (VMP) with 6 DoF*
   - *Lidar Spherical Projection*
 
 ## Covid Friendly Face Detector (CFFD)
