@@ -1,4 +1,4 @@
-# Introduction
+# Range AutoEncoder to Camera. A DNN for converting lidar data.
 This project's main goal is to create an autoencoder which main function will be to create a camera-like image from a lidar-range image.
 
 An AutoEncoder (AE) is a convolutional neural network composed by an encoder and a decoder, with a flatten middle layer.
