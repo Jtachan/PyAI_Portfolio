@@ -5,7 +5,7 @@ Although everything is explained, the code is not shared.<br />
 However, all codes are safe at a private repository.
 What I can show to you is the percentaje of all the codes:<br />
 
-<img src="codes_percentaje.png" alt="codes" width=600>
+<img src="codes_percentaje.png" alt="codes" width=400>
 
 Every project will have its own folder with its readme file, where all the explanations will be.<br />
 The link to each readme file will be listed below.<br />
