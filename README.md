@@ -17,8 +17,8 @@ Documented projects at this repository.<br />
   - *Covid Friendly Face Detector* (CFFD)
   [[Quick Introduction](https://github.com/Jtachan/CV_projects#covid-friendly-face-detector-cffd)]
   [[Documentation](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md)]
-  - *DNN: Range AutoEncoder to Camera* [(RAE2Cam)]
-  [[Quick Introduction]()]
+  - *DNN: Range AutoEncoder to Camera* (RAE2Cam)
+  [[Quick Introduction](https://github.com/Jtachan/CV_projects/blob/main/README.md#autoencoder-from-lidar-range-to-camera-image-rae2cam)]
   [[Documentation](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/readme-AE.md)]
 
 **Projects yet to upload** (In progress)
