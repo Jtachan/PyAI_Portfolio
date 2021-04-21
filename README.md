@@ -52,5 +52,6 @@ An AE is a Convolutional Neural Network (CNN) composed by an encoder, a flat lay
 This was my Final Bachelor's Degree Project at the University.<br />
 The formal memory is also uploaded to the same file, however it's only in Spanish.
 
-I'm still translating and uploading all the important information.
+I'm still translating and uploading all the important information.<br />
+[Folder link](https://github.com/Jtachan/CV_projects/tree/main/VMP_6DoF)
 
