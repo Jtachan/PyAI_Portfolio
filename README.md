@@ -5,7 +5,7 @@ Although everything is explained, the code is not shared.<br />
 However, all codes are safe at a private repository.
 What I can show to you is the percentaje of all the codes:<br />
 
-<img src="codes_percentaje.png" alt="codes" width=400>
+<img src="github_codes.png" alt="codes" width=400>
 
 Every project will have its own folder with its readme file, where all the explanations will be.<br />
 The link to each readme file will be listed below.<br />
@@ -13,7 +13,8 @@ Each project is also shortly explained below the list
 
 ## List of all projects
 
-  - *Covid Friendly Face Detector* [(CFFD)](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md) 
+  - *Covid Friendly Face Detector* [(CFFD)](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md)
+  - *DNN: Range AutoEncoder to Camera* [(R-AE2Cam)](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/readme-AE.md)
 
 ## Covid Friendly Face Detector (CFFD)
 Because of Covid-19 a very common sight is that everyone has a mask outside their homes. 
@@ -24,3 +25,15 @@ The goal is to being able to detect any face (with or without mask) and predict 
 <br />
 
 <img src="covid_drowsiness_detector/imgs/mix_front.png" alt="mix_front" width=400>
+
+## AutoEncoder: From Lidar-Range to Camera image (RAE2Cam)
+When working with lidar systems at an automotive environment one of the main problems is to identify the scene at the lidar data.
+This could be an easier problem to solve if the 3D Point Cloud Data (PCD) could be analyzed as an image, because
+Computer Vision is a very wide field that already has a lot of background.
+
+The main goal of this project was to create a Deep Neural Network (DNN), named AutoEncoder (AE), that could obtain 
+a camera-like image from a lidar-range image.
+An AE is a Convolutional Neural Network (CNN) composed by an encoder, a flat layer and a decoder in this order.
+
+  - Results of the network:<br />
+          <img src="RAE2Cam/imgs/range_trained.png" alt="autoencoder" width=400> 
