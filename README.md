@@ -49,7 +49,7 @@ An AE is a Convolutional Neural Network (CNN) composed by an encoder, a flat lay
 <img src="RAE2Cam/imgs/range_trained.png" alt="autoencoder" width=500> 
 
 ## Vehicle Model Predictor with 6-DoF (VMP)
-This was my Final Bachelor's Degree Project at the University.
+This was my Final Bachelor's Degree Project at the University.<br />
 The formal memory is also uploaded to the same file, however it's only in Spanish.
 
 I'm still translating and uploading all the important information.
