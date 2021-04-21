@@ -9,7 +9,7 @@ Each project is also shortly explained below the list
 
 ## List of all projects
 
-  - *Covid Friendly Face Detector* [CFFD](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md) 
+  - *Covid Friendly Face Detector* [(CFFD)](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md) 
 
 ## Covid Friendly Face Detector (CFFD)
 Because of Covid-19 a very common sight is that everyone has a mask outside their homes. 
