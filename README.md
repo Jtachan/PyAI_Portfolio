@@ -16,6 +16,12 @@ Each project is also shortly explained below the list
   - *Covid Friendly Face Detector* [(CFFD)](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md)
   - *DNN: Range AutoEncoder to Camera* [(R-AE2Cam)](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/readme-AE.md)
 
+**Projects yet to upload**
+  - *Radar 360 view*
+  - *Fusion data from radars systems*
+  - *Vehicle Model Predictos (VMP) with 6 DoF*
+  - *Lidar Spherical Projection*
+
 ## Covid Friendly Face Detector (CFFD)
 Because of Covid-19 a very common sight is that everyone has a mask outside their homes. 
 With the face partially covered, old face detectors might not work.
