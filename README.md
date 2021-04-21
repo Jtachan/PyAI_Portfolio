@@ -16,5 +16,5 @@ Because of Covid-19 a very common sight is that everyone has a mask outside thei
 With the face partially covered, old face detectors might not work.
 
 This project implements a CNN-based face detector with a re-trained 22-face-landmarks shape predictor.
-The goal is to being able to detect any face (with or without mask) and predict drowsiness at the detected face.
+The goal is to being able to detect any face (with or without mask) and predict drowsiness at the detected face.<br />
 <img src="covid_drowsiness_detector/imgs/mix_front.png" alt="mix_front" width=400>
