@@ -24,7 +24,7 @@ This project implements a CNN-based face detector with a re-trained 22-face-land
 The goal is to being able to detect any face (with or without mask) and predict drowsiness at the detected face.
 <br />
 
-<img src="covid_drowsiness_detector/imgs/mix_front.png" alt="mix_front" width=400>
+<img src="covid_drowsiness_detector/imgs/mix_front.png" alt="mix_front" width=500>
 
 ## AutoEncoder: From Lidar-Range to Camera image (RAE2Cam)
 When working with lidar systems at an automotive environment one of the main problems is to identify the scene at the lidar data.
@@ -35,5 +35,4 @@ The main goal of this project was to create a Deep Neural Network (DNN), named A
 a camera-like image from a lidar-range image.
 An AE is a Convolutional Neural Network (CNN) composed by an encoder, a flat layer and a decoder in this order.
 
-  - Results of the network:<br />
-          <img src="RAE2Cam/imgs/range_trained.png" alt="autoencoder" width=400> 
+<img src="RAE2Cam/imgs/range_trained.png" alt="autoencoder" width=500> 
