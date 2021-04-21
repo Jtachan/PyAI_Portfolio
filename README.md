@@ -35,9 +35,9 @@ This project implements a CNN-based face detector with a re-trained 22-face-land
 The goal is to being able to detect any face (with or without mask) and predict drowsiness at the detected face.
 <br />
 
-[File report](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md)
-
 <img src="covid_drowsiness_detector/imgs/mix_front.png" alt="mix_front" width=500>
+
+[Link to report](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md)
 
 ## AutoEncoder: From Lidar-Range to Camera image (RAE2Cam)
 When working with lidar systems at an automotive environment one of the main problems is to identify the scene at the lidar data.
