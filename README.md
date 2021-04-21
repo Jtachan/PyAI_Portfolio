@@ -19,11 +19,12 @@ Each one has a brief introduction below.
   [(CFFD)](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md)
   - *DNN: Range AutoEncoder to Camera* 
   [(RAE2Cam)](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/readme-AE.md)
+  - *Vehicle Model Predictor (VMP) with 6 DoF* <br />
+  **[WARNING]:** Read the description of the project below
 
 **Projects yet to upload** (In progress)
   - *Radar 360 view*
   - *Fusion data from radars systems*
-  - *Vehicle Model Predictor (VMP) with 6 DoF*
   - *Lidar Spherical Projection*
 
 ## Covid Friendly Face Detector (CFFD)
@@ -46,3 +47,10 @@ a camera-like image from a lidar-range image.
 An AE is a Convolutional Neural Network (CNN) composed by an encoder, a flat layer and a decoder in this order.
 
 <img src="RAE2Cam/imgs/range_trained.png" alt="autoencoder" width=500> 
+
+## Vehicle Model Predictor with 6-DoF (VMP)
+This was my Final Bachelor's Degree Project at the University.
+The formal memory is also uploaded to the same file, however it's only in Spanish.
+
+I'm still translating and uploading all the important information.
+
