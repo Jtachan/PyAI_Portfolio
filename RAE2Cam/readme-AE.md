@@ -15,12 +15,12 @@ The training will be separated in two different states:
   1. **Train with camera images**:
   This state will focus on the network to learn the structures from a driving scene.
   For it, the network is fed with camera images at the input and compared with the same images at the output.<br />
-  <img src="imgs/train_st1.png" alt="scheme_tr1" width=600>
+        <img src="imgs/train_st1.png" alt="scheme_tr1" width=600>
   
   2. **Train with range images**:
   At this state the network is fed at the input with a lidar-range image.
   The result is compared with a camera image at the output, corresponding at the same scene as the range image.<br />
-  <img src="imgs/train_st2.png" alt="scheme_tr2" width=600>
+        <img src="imgs/train_st2.png" alt="scheme_tr2" width=600>
   
 For all states of training next datasets were used:
 
