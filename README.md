@@ -35,7 +35,7 @@ This project implements a CNN-based face detector with a re-trained 22-face-land
 The goal is to being able to detect any face (with or without mask) and predict drowsiness at the detected face.
 <br />
 
-[Link to report](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md)
+[Link to project](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md)
 
 <img src="covid_drowsiness_detector/imgs/mix_front.png" alt="mix_front" width=500>
 
@@ -48,7 +48,7 @@ The main goal of this project was to create a Deep Neural Network (DNN), named A
 a camera-like image from a lidar-range image.
 An AE is a Convolutional Neural Network (CNN) composed by an encoder, a flat layer and a decoder in this order.<br />
 
-[(RAE2Cam)](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/readme-AE.md)
+[Link to project](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/readme-AE.md)
 
 <img src="RAE2Cam/imgs/range_trained.png" alt="autoencoder" width=500> 
 
