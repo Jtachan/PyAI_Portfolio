@@ -13,12 +13,11 @@ Each project is also shortly explained below the list
 
 ## List of all projects
 Documented projects at this repository.<br />
-To read them, pres the hyperlink.
 
   - *Covid Friendly Face Detector* [(CFFD)](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/readme-CFFD.md)
-  - *DNN: Range AutoEncoder to Camera* [(R-AE2Cam)](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/readme-AE.md)
+  - *DNN: Range AutoEncoder to Camera* [(RAE2Cam)](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/readme-AE.md)
 
-**Projects yet to upload**
+**Projects yet to upload** (In progress)
   - *Radar 360 view*
   - *Fusion data from radars systems*
   - *Vehicle Model Predictos (VMP) with 6 DoF*
