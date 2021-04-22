@@ -57,6 +57,7 @@ This was my Final Bachelor's Degree Project at the University.<br />
 The formal memory is also uploaded to the same file, however it's only in Spanish.
 
 I'm still translating and uploading all the important information.<br />
-[Folder link](https://github.com/Jtachan/CV_projects/tree/main/VMP_6DoF)
+[Link to university report](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/TFG_Jaime_Gonzalez_Gomez.pdf)(Spanish)
+[Link to project](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/project-VMP.md)
 
 <img src="VMP_6DoF/imgs/full_vehicle.png" alt="vmp" width=500> 
