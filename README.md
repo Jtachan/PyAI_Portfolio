@@ -1,4 +1,4 @@
-# Projects from Jaime Gonzalez
+# Projects made by Jaime Gonzalez
 
 This repository is a description of the projects I've worked on. 
 Although everything is explained, the code is not shared.<br />
