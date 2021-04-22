@@ -1,8 +1,8 @@
 # Projects made by Jaime Gonzalez
 
 This repository is a description of the projects I've worked on. 
-Although everything is explained, the code is not shared.<br />
-However, all codes are safe at a private repository.
+All basic ideas are explained.<br />
+However, all codes are safe at another private repository.
 What I can show to you is the percentaje of all the codes:<br />
 
 <img src="github_codes.png" alt="codes" width=400>
