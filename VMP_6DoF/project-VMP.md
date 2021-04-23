@@ -88,3 +88,113 @@ Therefore, because of the new mass distribution due to the elevation, the front 
 *Z<sub>CG</sub> = (M<sub>1</sub> &sdot; l<sub>f</sub> &minus; M<sub>2</sub> &sdot; l<sub>r</sub>)
 / (M &sdot; tan(&#1012;))*
 
+With that las equation, all coordinates of the CG are known.
+
+## Model of one-fourth vehicle: Damper model
+When a vehicle is in motion, the angles of pitch and roll appear when it changes its speed and/or it takes a turn.
+This effect can only exist if the mechanical properties of the vehicle allows it.
+If we imagine a metal rod, the rod cannot be compress to change its total length.
+However, if we imagine a spring, it can be compress.
+
+A vehicle experiences this effect because it has a damper system joining each tyre to the chassis.
+There are also two anti-roll rods: one joining the front tyres and one joining the rear tyres, but these will be neglected at the model.
+Thus, the last part to catacterize of the vehicle is the system of the dampers.
+
+<img src="imgs/dumper.png" alt="dumper" width=250>
+
+The compression force that experiences a damper (*F<sub>ci</sub>*) 
+is defined by a second order equation, in function of the chassis displacement:
+
+*F<sub>ci</sub> = &minus; K<sub>i</sub> (z<sub>s</sub> &minus; z<sub>s0</sub>)
+&minus; D<sub>i</sub> (&zdot;<sub>s</sub> &minus; &zdot;<sub>s0</sub>) 
+&plus; m<sub>si</sub> &sdot; g*
+
+At the equation, each letter represents:
+
+  - *'i'* is the number representing each corner of the vehicle, going from 1 to 4.
+  - *'K'* is the spring constant
+  - *'D'* is the coefficient of friction of the damper 
+  - *'m<sub>s</sub>'* is the chassis mass hold by the damper
+
+To model all dampers is not needed make all calculations four times.
+Both front dampers are equal and both rear dampers are equal.
+Then calculations are only needed to be carry twice.<br />
+And at last, two approximations will be apply:
+
+  - The tyre doesn't deform. All the vertical displacement will be hold at the damper.
+  - The model of a single damper is a 1-DoF model. It only accepts vertical displacement and doesn't have any rotations.
+
+With the previous statements and at a static state, the damper's force is equal to the weight of the chassis. 
+Then the only acceleration is the gravity.
+Applying it at the previous equation, the constant *K* can be defined.
+For it, the vertical displacement will be the difference of the extended spring minus the length of the spring when the vehicle is at rest on the floor. 
+
+*K<sub>i</sub>(z<sub>s</sub> &minus; z<sub>s0</sub>) =  m<sub>si</sub> &sdot; g*
+
+With it, the only remaining parameter is the coefficient of friction *D*. 
+To calculate it, the full equation has to be reorganized at the Laplace domain to obtain the transfer function.
+For it, *Z<sub>s</sub>* is the output and *Z<sub>s0</sub>* the input.
+
+*Z<sub>s</sub> (s) / Z<sub>s0</sub> (s) = 
+(D &sdot; + K) / 
+(m<sub>s</sub> &sdot; s<sup>2</sup> + D &sdot; + K)*
+
+The parameters are obtained by analyzing the caracteristic equation from the transfer function.
+This one has to be compared to the second order equation of a damped system.
+
+*s<sup>2</sup> + s &sdot; D / m<sub>s</sub> + K / m<sub>s</sub> = 
+s<sup>2</sup> + s &sdot; 2 &xi; &omega; <sub>n</sub> + &omega;<sub>n</sub><sup>2</sup>*
+
+By comparing the terms all the parameters can be obtained as long as *&xi;* is defined.
+The *&xi* at a damper is not constant, taking a value among *0.7* and *0.9*.
+However, taking in consideration the final model won't travel at fast velocities and 
+the road is considered in good conditions, its value will be consider constant at *0.7*
+
+*&omega;<sub>n</sub> = &radic;(K / m<sub>s</sub>)*  <br/>
+*D = 2 &omega;<sub>n</sub> m<sub>s</sub> &xi;*
+
+For a more precise approach, a curve force-velocity should be analyzed at a test bench.
+This curve caracterizes the *&xi;* factor of a damper.
+
+# Models researched
+These followings are the models that will be combined to obtain the goal of the project.
+
+## Bicycle model
+The simplified bicycle model alaizes the trayectory of a vehicle assuming it only has one front wheel and one rear wheel.
+With a 2D analysis, this model only has 3 state variables, which represent the DoF of the model, and 2 control signals:
+
+  - State variables: {*X, Y, &psi;*}
+  - Control signals: {*V, &delta;*}
+
+As it can be noticed, a contol signal is the rotation of the front wheel (*&delta;*).
+Previously has been proven how to obtain this parameter prom the steering wheel position, 
+so from now on all equations will show only the *&delta;* parameter.
+
+<img src="imgs/bicycle.png" alt="bicycle" width=500>
+
+The basics of physics establish that a coefficient of friction *&mu;* is needed, between the tyres and the road, for the vehicle being able to travel.
+An infinite *&mu;* would mean a perfect adhesion of the vehicle to the ground, resulting in a perfect trayectory when turning.
+At the contrary, a *&mu;* with a very low value would mean to the vehicle to slip.
+A clear example of the vehicle sliping is driving on ice.
+
+The difference of the ideal track and the real one is defined the slip angle(*&beta;*).
+
+<img src="imgs/slip_angle.png" alt="slip_angle" width=500>
+
+With the *&beta;* the instantaneous trajectory (*&gamma;*) is defined as the sum of the yaw and the slip angle.
+
+*&gamma; = &psi; + &beta;*
+
+However *&gamma;* doesn't show he real evolution of the track.
+Therefore a further analysis is needed to find the derivate of the state variables.
+This is done by applying trigonometry to the bicycle diagram to know *&beta;*
+
+*&beta; = arctan(l<sub>r</sub> &sdot; tan(&delta;) / L)*
+
+By knowing *&beta* it is known *&gamma;* and the differences at velocity for each of the state variables.
+
+*d/dt &sdot; X = V &sdot; cos(&psi; + &beta;)* <br />
+*d/dt &sdot; Y = V &sdot; sin(&psi; + &beta;)* <br />
+*d/dt &sdot; &psi; = V &sdot; sin(&beta;)/l<sub>r</sub>* <br />
+
+
