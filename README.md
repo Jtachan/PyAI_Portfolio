@@ -2,8 +2,9 @@
 
 This repository is a description of the projects I've worked on. 
 All basic ideas are explained.<br />
-However, all codes are safe at another private repository.
-What I can show to you is the percentaje of all the codes:<br />
+However, not all codes can be shared. 
+Private codes are safe at another private repository.
+What I can show to you is the percentaje of all the codes (public and privates):<br />
 
 <img src="github_codes.png" alt="codes" width=400>
 
