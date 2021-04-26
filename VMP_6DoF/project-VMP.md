@@ -197,4 +197,80 @@ By knowing *&beta* it is known *&gamma;* and the differences at velocity for eac
 *d/dt &sdot; Y = V &sdot; sin(&psi; + &beta;)* <br />
 *d/dt &sdot; &psi; = V &sdot; sin(&beta;)/l<sub>r</sub>* <br />
 
+# Cinematic model for pitch and roll
+## Roll aproximation
+Masato Abe and W. Manning present a way to determine the steady state value of the roll of a moving vehicle,
+documented at their book *Vehicle Handling Dynamics*.
+For it, they announce only certain parameters are needed:
 
+  - The mass of the chassis (*m<sub>s</sub>*)
+  - The distance from the CG to the roll axis (*d<sub>roll</sub>*)
+  - The anti-roll constant (*K<sub>&theta;</sub>*), being composed by all four dampers and the anti-roll bars.
+
+With these parameters, they establish the roll is a function of the lateral acceleration (*a<sub>y</sub>*).
+
+*&theta; = f(a<sub>y</sub>) = 
+a<sub>y</sub> &sdot; (m<sub>s</sub> &sdot; d<sub>roll</sub>) / K<sub>&theta;</sub>*
+
+With the previous statement of the vehicle travelling at low speed, 
+the approximation of calculating the roll with the steady state value could be a correct aproximation.
+
+## Pitch aproximation
+Based on the theory of Masato Abe and W. Manning, a steady state pitch aproximation model was developed.
+It has the same bases as the previous model, but adapted to the pitch angle.
+
+*&phi; = f(a<sub>x</sub>) = 
+a<sub>x</sub> &sdot; (m<sub>s</sub> &sdot; d<sub>pitch</sub>) / K<sub>&phi;</sub>*
+
+# Dynamic model for pitch and roll
+This model was based on the studies made by Chalmers' University. 
+Here, a physical model was detailed and analyzed by semi-vehicle models to calculate the force momentum.
+These half-models combined create a full vehicle model that predicts the increment in acceleration for the pitch and roll angles.
+
+## Pitch model
+To calculate how the pitch evolves, a side-vehicle model has to be analyzed. 
+Within it, the vehicle rotates around a Pitch Center point (PC), which is not at the same position as the CG.
+
+<img src="imgs/side_car.png" alt="side_car" width=600>
+
+As it can be seen at the image, the analysis is carried out by comparing the equations for *M<sub>y</sub>* resultant of the top and the bottom forces.
+By doing so, the following is the equation for a side car, at this case, the left side of the vehicle.
+At it is also taking the approximation of *tan(&alpha;) &cong; &alpha;* for very small angles.
+
+*(I<sub>y</sub> + m<sub>s</sub> &sdot; d<sub>pitch</sub><sup>2</sup>) &sdot; d<sup>2</sup>/dt<sup>2</sup> &sdot; &phi; = <br />
+&emsp; (F<sub>x1</sub> + F<sub>x3</sub>) &sdot; h<sub>PC</sub> - 
+F<sub>c1</sub> &sdot; l<sub>f</sub> + F<sub>c3</sub> &sdot; l<sub>r</sub> + 
+m<sub>s</sub> &sdot; a<sub>x</sub> &sdot; d<sub>pitch</sub> +
+m<sub>s</sub> &sdot; g &sdot; d<sub>pitch</sub> &sdot; &phi;*
+
+With that analysis it is obtained the equation for half vehicle. 
+The advantage for the pitch, as mentioned when the CG's position was being defined, is that the vehicle is simetric at that axis.
+For it, the full equation, considering both sides of the vehicle, is the following:
+
+*(I<sub>y</sub> + m<sub>s</sub> &sdot; d<sub>pitch</sub><sup>2</sup>) &sdot; d<sup>2</sup>/dt<sup>2</sup> &sdot; &phi; = <br />
+&emsp; &sum; F<sub>x</sub> &sdot; h<sub>PC</sub> - 
+(F<sub>c1</sub> + F<sub>c2</sub>) &sdot; l<sub>f</sub> + 
+(F<sub>c3</sub> + F<sub>c4</sub>) &sdot; l<sub>r</sub> + 
+m<sub>s</sub> &sdot; a<sub>x</sub> &sdot; d<sub>pitch</sub> +
+m<sub>s</sub> &sdot; g &sdot; d<sub>pitch</sub> &sdot; &phi;*
+
+## Roll model
+The esablishment of the roll model follows the same guidelines as the pitch model.
+However the vehicle does not have the same simetrical properties for the front and the back.
+This affects to:
+  - The front and rear mass 
+  - The dampers characteristics
+  - The distance to the Roll Center (RC), due its axis is tilted and not parallel to the ground
+
+<img src="imgs/front_car.png" alt="front_car" width=550>
+
+To simplify the calculus, the only approximation to be made is to consider that RC is in fact at the same distance.
+In other words, it will be supposed that the axis that holds RC is parallel to the ground.
+With it and following the previous analysis steps, the ecuation for the variation of the roll can be obtained as:
+
+*(I<sub>x</sub> + m<sub>s</sub> &sdot; d<sub>roll</sub><sup>2</sup>) &sdot; d<sup>2</sup>/dt<sup>2</sup> &sdot; &theta; = <br />
+&emsp; &sum; F<sub>y</sub> &sdot; h<sub>RC</sub> + 
+(F<sub>c1</sub> - F<sub>c2</sub>) &sdot; t<sub>f</sub> /2 + 
+(F<sub>c3</sub> - F<sub>c4</sub>) &sdot; t<sub>r</sub> /2 + 
+m<sub>s</sub> &sdot; a<sub>y</sub> &sdot; d<sub>roll</sub> +
+m<sub>s</sub> &sdot; g &sdot; d<sub>roll</sub> &sdot; &theta;*
