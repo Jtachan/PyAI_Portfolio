@@ -21,7 +21,7 @@ Each one has a brief introduction below.
   - *DNN: Range AutoEncoder to Camera* 
   [(RAE2Cam)](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/project-AE.md)
   - *Vehicle Model Predictor [(VMP)](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/project-VMP.md)
-    with 6 DoF* **[Being uploaded]**
+    with 6 DoF* 
   
 **Projects yet to upload** (In progress)
   - *Radar 360 view*
@@ -57,7 +57,9 @@ An AE is a Convolutional Neural Network (CNN) composed by an encoder, a flat lay
 This was my Final Bachelor's Degree Project at the University.<br />
 The formal memory is also uploaded to the same file, however it's only in Spanish.
 
-I'm still translating and uploading all the important information.<br />
+In it, a 6-DoF mathematical model is developed to be implemented as a predictor for a moving vehicle.
+This model is to be used as the predictor inside a Kalman Filter to improve the results.<br />
+
 [Link to project](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/project-VMP.md)<br />
 [Link to University report](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/TFG_Jaime_Gonzalez_Gomez.pdf) (Spanish)
 
