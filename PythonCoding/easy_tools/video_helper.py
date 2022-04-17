@@ -131,8 +131,15 @@ class VideoHelper:
         ----------
         image: numpy N-dimensional array (OpenCV image)
             Frame image to be written into the output video.
+
+        Raises
+        ------
+        ValueError:
+            Given if no output path was specified when defining the class.
         """
         self.__check_context_manager()
+        if self.__output_path is None:
+            raise ValueError("'write' method cannot be used: output path was not specified.")
         self.__writer.write(image)
 
     # ################################################################ #
