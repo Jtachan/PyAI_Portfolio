@@ -9,5 +9,6 @@ setuptools.setup(
     version="1.0.0",
     install_requires=[
         "opencv-python==4.5.*",
+        "numpy>=1.20.0"
     ]
 )
