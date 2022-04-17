@@ -2,7 +2,7 @@
 import setuptools
 
 setuptools.setup(
-    name="easy-helpers",
+    name="easy-tools",
     description="The package contains simple and easy usable modules for any user",
     author="Jaime Gonzalez Gomez",
     author_email="jim.gomez.dnn@gmail.com",
