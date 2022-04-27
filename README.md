@@ -16,6 +16,8 @@ Each project is also shortly explained below the list
 Documented projects at this repository.<br />
 Each one has a brief introduction below. 
 
+  - *Python extended utils*
+  [(Python Coding)](https://github.com/Jtachan/CV_projects/tree/main/PythonCoding)
   - *Covid Friendly Face Detector* 
   [(CFFD)](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
   - *DNN: Range AutoEncoder to Camera* 
@@ -27,6 +29,14 @@ Each one has a brief introduction below.
   - *Radar 360 view*
   - *Fusion data from radars systems*
   - *Lidar Spherical Projection*
+
+## Python extended utils
+The `Python extended utils` is a small installable package with a few extra classes.
+The main purpose of the package is to show my organisation on coding and how these tools are documented.
+
+The project contains the following classes:
+* [**VideoHelper**](https://github.com/Jtachan/CV_projects/tree/main/PythonCoding#videohelper): Tool to open and write a video using the OpenCV package.
+* [**ExtendedTestCase**](https://github.com/Jtachan/CV_projects/tree/main/PythonCoding#extendedtestcase): Base class of unittest.TestCase containing extra assert methods.
 
 ## Covid Friendly Face Detector (CFFD)
 Because of Covid-19 a very common sight is that everyone has a mask outside their homes. 
