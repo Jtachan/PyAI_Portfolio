@@ -1,7 +1,7 @@
 """
 Module containing a base class for unittests.
 """
-from typing import List, Union, Dict
+from typing import List, Union, Dict, Optional
 from enum import Enum
 import unittest
 
@@ -15,7 +15,7 @@ class ExtendedTestCase(unittest.TestCase):
         list1: List[Union[Dict, float, int, List, Enum]],
         list2: List[Union[Dict, float, int, List, Enum]],
         places: int = 7,
-        msg: str = None
+        msg: Optional[str] = None
     ) -> None:
         """
         Method for using "assertAlmostEqual" with List.
@@ -26,9 +26,9 @@ class ExtendedTestCase(unittest.TestCase):
             First list containing only dictionaries, float values or other lists as elements.
         list2: list
             Second list containing only dictionaries, float values or other lists as elements.
-        places:
+        places: int
             Number of decimal places to round when checking "assertAlmostEqual" to compare two floats.
-        msg:
+        msg: optional str
             Message to be printed if a checking fails. By default, no message is printed.
         """
 
@@ -49,15 +49,17 @@ class ExtendedTestCase(unittest.TestCase):
                 self.assertListAlmostEqual(element_list1, element_list2, places=places, msg=msg)
             elif isinstance(element_list1, float):
                 self.assertAlmostEqual(element_list1, element_list2, places=places, msg=msg)
-            else:
+            elif isinstance(element_list1, (int, str)) or element_list1 is None:
                 self.assertEqual(element_list1, element_list2, msg=msg)
+            else:
+                raise ValueError(f"Element type '{type(element_list1)}' not supported.")
 
     def assertDictAlmostEqual(
         self,
         dict1: Dict[str, Union[Dict, float, int, List, Enum]],
         dict2: Dict[str, Union[Dict, float, int, List, Enum]],
         places: int = 7,
-        msg: str = None
+        msg: Optional[str] = None
     ) -> None:
         """
         Method for using "assertAlmostEqual" with Dicts.
@@ -88,5 +90,7 @@ class ExtendedTestCase(unittest.TestCase):
                 self.assertListAlmostEqual(dict1[key], dict2[key], places=places, msg=msg)
             elif isinstance(value, float):
                 self.assertAlmostEqual(dict1[key], dict2[key], places=places, msg=msg)
-            else:
+            elif isinstance(value, (int, str)) or value is None:
                 self.assertEqual(dict1[key], dict2[key], msg=msg)
+            else:
+                raise ValueError(f"Element type '{type(value)}' at key '{key}' not supported.")
