@@ -1,21 +1,22 @@
 """
 Module containing a base class for unittests.
 """
-from typing import List, Union, Dict, Optional
-from enum import Enum
 import unittest
+from enum import Enum
+from typing import Dict, List, Optional, Union
 
 
 class ExtendedTestCase(unittest.TestCase):
     """
     TestCase class with extra methods.
     """
-    def assertListAlmostEqual(
+
+    def assertListAlmostEqual(  # pylint: disable=invalid-name
         self,
         list1: List[Union[Dict, float, int, List, Enum]],
         list2: List[Union[Dict, float, int, List, Enum]],
         places: int = 7,
-        msg: Optional[str] = None
+        msg: Optional[str] = None,
     ) -> None:
         """
         Method for using "assertAlmostEqual" with List.
@@ -41,8 +42,9 @@ class ExtendedTestCase(unittest.TestCase):
 
         # Check every element on the list
         for element_list1, element_list2 in zip(list1, list2):
-            self.assertEqual(type(element_list1), type(element_list2),
-                             msg="Lists must have the elements arranged in the same order.")
+            self.assertEqual(
+                type(element_list1), type(element_list2), msg="Lists must have the elements arranged in the same order."
+            )
             if isinstance(element_list1, dict):
                 self.assertDictAlmostEqual(element_list1, element_list2, places=places, msg=msg)
             elif isinstance(element_list1, list):
@@ -54,12 +56,12 @@ class ExtendedTestCase(unittest.TestCase):
             else:
                 raise ValueError(f"Element type '{type(element_list1)}' not supported.")
 
-    def assertDictAlmostEqual(
+    def assertDictAlmostEqual(  # pylint: disable=invalid-name
         self,
         dict1: Dict[str, Union[Dict, float, int, List, Enum]],
         dict2: Dict[str, Union[Dict, float, int, List, Enum]],
         places: int = 7,
-        msg: Optional[str] = None
+        msg: Optional[str] = None,
     ) -> None:
         """
         Method for using "assertAlmostEqual" with Dicts.

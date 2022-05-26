@@ -1,12 +1,13 @@
 """ The module contains the VideoHelper class """
 from __future__ import annotations
+
+import os.path
+import sys
+import warnings
 from typing import Optional, Union
 
-import sys
-import os.path
-import warnings
-from cv2 import cv2 as cv
 import numpy.typing as npt
+from cv2 import cv2 as cv
 
 
 class VideoHelper:
@@ -14,15 +15,11 @@ class VideoHelper:
     Python Manager to easily read and write videos. It doesn't support reading from any webcam.
     The class must be called into the code with the 'with' statement.
     """
+
     # ################################################################ #
     # ------------------------- Constructor  ------------------------- #
     # ################################################################ #
-    def __init__(
-        self,
-        input_path: str,
-        output_path: Optional[str] = None,
-        force: bool = False
-    ):
+    def __init__(self, input_path: str, output_path: Optional[str] = None, force: bool = False):
         """
         Init the VideoHelper.
 
@@ -50,8 +47,10 @@ class VideoHelper:
                 self.__output_path = output_path + ".avi"
             elif out_extension != ".avi":
                 self.__output_path = os.path.splitext(output_path)[0] + ".avi"
-                warnings.warn("'VideoHelper' supports only 'avi' as output format, but another was given.\n"
-                              f"The video will be saved as '{self.__output_path}'.")
+                warnings.warn(
+                    "'VideoHelper' supports only 'avi' as output format, but another was given.\n"
+                    f"The video will be saved as '{self.__output_path}'."
+                )
             else:
                 self.__output_path = output_path
 
@@ -70,8 +69,7 @@ class VideoHelper:
             self.__capturer = cv.VideoCapture(self.__input_path)
 
             if self.__output_path is not None:
-                out_dim = (self.__capturer.get(cv.CAP_PROP_FRAME_WIDTH),
-                           self.__capturer.get(cv.CAP_PROP_FRAME_HEIGHT))
+                out_dim = (self.__capturer.get(cv.CAP_PROP_FRAME_WIDTH), self.__capturer.get(cv.CAP_PROP_FRAME_HEIGHT))
                 fourcc = cv.VideoWriter_fourcc("M", "J", "P", "G")
                 self.__writer = cv.VideoWriter(self.__output_path, fourcc, 30, out_dim)
             return self
@@ -147,15 +145,15 @@ class VideoHelper:
     # ################################################################ #
     @property
     def total_nof_frames(self) -> Union[int, str]:
-        """ int: Total number of frames containing the video"""
+        """int: Total number of frames containing the video"""
         return self.__capturer.get(cv.CAP_PROP_FRAME_COUNT)
 
     @property
     def input_video(self) -> str:
-        """ str: Source of the input video """
+        """str: Source of the input video"""
         return self.__input_path
 
     @property
     def output_video(self) -> str:
-        """ str: Path to the output video being saved """
+        """str: Path to the output video being saved"""
         return self.__output_path
