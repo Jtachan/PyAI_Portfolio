@@ -83,6 +83,28 @@ class TimeProtocolConverter(datetime.datetime):
             )
         return cls.from_unix_microseconds(int(unix_seconds * 1e6), utc_offset=utc_offset)
 
+    @property
+    def unix_seconds(self) -> float:
+        """float: timestamp specified in seconds"""
+        return self.timestamp()
+
+    @property
+    def unix_microseconds(self) -> int:
+        """int: timestamp specified in microseconds"""
+        return int(self.unix_seconds * 1e6)
+
+    @property
+    def ntp_timestamp(self) -> int:
+        """int: timestamp specified in the NTP format"""
+        seconds = int(self.unix_seconds)
+        fractional_seconds = self.unix_seconds % 1
+        return int(seconds << 32 + fractional_seconds * 2 ** 32)
+
+    @property
+    def time_label(self) -> str:
+        """str: date of the timestamp, containing information about the timezone, in a human-readable format"""
+        return self.isoformat(" ")
+
 
 _UNIX_EPOCH = TimeProtocolConverter(year=1970, month=1, day=1)
 _NTP_EPOCH = TimeProtocolConverter(year=1900, month=1, day=1)
