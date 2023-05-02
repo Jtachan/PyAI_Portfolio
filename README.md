@@ -16,6 +16,7 @@ Each project is also shortly explained below the list
 Documented projects at this repository.<br />
 Each one has a brief introduction below. 
 
+  - *Python coding guide*
   - *Python extended utils*
   [(Python Coding)](https://github.com/Jtachan/CV_projects/tree/main/PythonCoding)
   - *Covid Friendly Face Detector* 
@@ -29,6 +30,13 @@ Each one has a brief introduction below.
   - *Radar 360 view*
   - *Fusion data from radars systems*
   - *Lidar Spherical Projection*
+
+## Python coding guide
+This repo contains an organized guide on how to program on Python. This is the knowledge I had adquire while working as a Python Engineer.
+<br>The creation of this repository has two purposes:
+
+- Demonstrate my knowledge on Python and show how I work on projects with it
+- Help others not so experienced in Python to improve
 
 ## Python extended utils
 The `Python extended utils` is a small installable package with a few extra classes.
