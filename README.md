@@ -38,6 +38,8 @@ This repo contains an organized guide on how to program on Python. This is the k
 - Demonstrate my knowledge on Python and show how I work on projects with it
 - Help others not so experienced in Python to improve
 
+[Link to repo](https://github.com/Jtachan/py-coding-hints)
+
 ## Python extended utils
 The `Python extended utils` is a small installable package with a few extra classes.
 The main purpose of the package is to show my organisation on coding and how these tools are documented.
