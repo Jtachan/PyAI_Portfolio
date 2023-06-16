@@ -16,15 +16,11 @@ Each project is also shortly explained below the list
 Documented projects at this repository.<br />
 Each one has a brief introduction below. 
 
-  - *Python coding guide*
-  - *Python extended utils*
-  [(Python Coding)](https://github.com/Jtachan/CV_projects/tree/main/PythonCoding)
-  - *Covid Friendly Face Detector* 
-  [(CFFD)](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
-  - *DNN: Range AutoEncoder to Camera* 
-  [(RAE2Cam)](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/project-AE.md)
-  - *Vehicle Model Predictor* [(VMP)](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/project-VMP.md)
-    *with 6 DoF* 
+  - [*Python coding guide*](https://github.com/Jtachan/py-coding-hints)
+  - [*PyMath Tools*](https://github.com/Jtachan/PyMathTools)
+  - [*Covid Friendly Face Detector (CFFD)*](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
+  - [*DNN: Range AutoEncoder to Camera(RAE2Cam)*](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/project-AE.md)
+  - [*6-DoF Vehicle Model Predictor (VMP)*](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/project-VMP.md)
   
 **Projects yet to upload** (In progress)
   - *Radar 360 view*
@@ -40,13 +36,14 @@ This repo contains an organized guide on how to program on Python. This is the k
 
 [Link to repo](https://github.com/Jtachan/py-coding-hints)
 
-## Python extended utils
-The `Python extended utils` is a small installable package with a few extra classes.
-The main purpose of the package is to show my organisation on coding and how these tools are documented.
+## PyMath Tools
+`PyMath Tools` is an installable package providing functions and python instances for fast, secure and easy math implementations.
+The package is on constant development.
 
-The project contains the following classes:
-* [**VideoHelper**](https://github.com/Jtachan/CV_projects/tree/main/PythonCoding#videohelper): Tool to open and write a video using the OpenCV package.
-* [**ExtendedTestCase**](https://github.com/Jtachan/CV_projects/tree/main/PythonCoding#extendedtestcase): Base class of unittest.TestCase containing extra assert methods.
+**Package badge showing the unittests results**:
+![Badge](https://github.com/Jtachan/PyMathTools/actions/workflows/unittests.yml/badge.svg)
+
+[Link to repo](https://github.com/Jtachan/PyMathTools)
 
 ## Covid Friendly Face Detector (CFFD)
 Because of Covid-19 a very common sight is that everyone has a mask outside their homes. 
