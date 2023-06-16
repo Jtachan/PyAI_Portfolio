@@ -6,7 +6,6 @@ Thus, once the tools are created and committed into the repo, the only support t
 
 * [**VideoHelper**](#videohelper): Tool to open and write a video using the OpenCV package.
 * [**ExtendedTestCase**](#extendedtestcase): Base class of `unittest.TestCase` containing extra assert methods.
-* TimeProtocolConverter \[In Construction]
 
 All tools are installable within the package and are easily importable with the package name:
 
