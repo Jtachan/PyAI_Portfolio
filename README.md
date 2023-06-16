@@ -40,7 +40,6 @@ This repo contains an organized guide on how to program on Python. This is the k
 `PyMath Tools` is an installable package providing functions and python instances for fast, secure and easy math implementations.
 The package is on constant development.
 
-**Package badge showing the unittests results**:
 ![Badge](https://github.com/Jtachan/PyMathTools/actions/workflows/unittests.yml/badge.svg)
 
 [Link to repo](https://github.com/Jtachan/PyMathTools)
