@@ -87,7 +87,3 @@ The two listed methods are compatible with list or dictionaries containing the f
 * Strings
 
 If any other type is contained, the classes will raise an error.
-
-## TimeProtocolConverter
-
-`TimeProtocolConverter` is a base class, inherited from `datetime` python package
