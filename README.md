@@ -16,16 +16,12 @@ Each project is also shortly explained below the list
 Documented projects at this repository.<br />
 Each one has a brief introduction below. 
 
-  - [*Python coding guide*](https://github.com/Jtachan/py-coding-hints)
-  - [*PyMath Tools*](https://github.com/Jtachan/PyMathTools)
+  - [*Python coding guide*](#python-coding-guide)
+  - [*PyMath Tools*](#pymath-tools)
   - [*Covid Friendly Face Detector (CFFD)*](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
   - [*DNN: Range AutoEncoder to Camera(RAE2Cam)*](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/project-AE.md)
   - [*6-DoF Vehicle Model Predictor (VMP)*](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/project-VMP.md)
   
-**Projects yet to upload** (In progress)
-  - *Radar 360 view*
-  - *Fusion data from radars systems*
-  - *Lidar Spherical Projection*
 
 ## Python coding guide
 This repo contains an organized guide on how to program on Python. This is the knowledge I had adquire while working as a Python Engineer.
@@ -41,6 +37,8 @@ This repo contains an organized guide on how to program on Python. This is the k
 The package is on constant development.
 
 ![Badge](https://github.com/Jtachan/PyMathTools/actions/workflows/unittests.yml/badge.svg)
+
+[Link to repo](https://github.com/Jtachan/PyMathTools)
 
 ```python
 # Example on "Temperature" instance
@@ -81,8 +79,6 @@ print(mat_2 - mat_1)
 # [[5. 5.]
 #  [5. 5.]]
 ```
-
-[Link to repo](https://github.com/Jtachan/PyMathTools)
 
 ## Covid Friendly Face Detector (CFFD)
 Because of Covid-19 a very common sight is that everyone has a mask outside their homes. 
