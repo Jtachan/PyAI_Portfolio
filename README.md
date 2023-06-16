@@ -42,6 +42,46 @@ The package is on constant development.
 
 ![Badge](https://github.com/Jtachan/PyMathTools/actions/workflows/unittests.yml/badge.svg)
 
+```python
+# Example on "Temperature" instance
+from pymath_tools.instances import Temperature
+
+temperature = Temperature(value=100, scale="celsius")
+print(temperature.celsius)  # This prints '100.0'
+print(temperature.kelvin)  # This prints '373.15'
+print(temperature.fahrenheit)  # This prints '212.0'
+
+temperature = Temperature.from_celsius(24.0)
+print(temperature.celsius)  # This prints '24.0'
+temperature = Temperature.from_kelvin(297.15)
+print(temperature.celsius)  # This prints '24.0'
+temperature = Temperature.from_fahrenheit(75.2)
+print(temperature.celsius)  # This prints '24.0'
+
+# Example on "GenericMatrix" instance
+import numpy as np
+from pymath_tools.instances import GenericMatrix
+
+mat_1 = GenericMatrix(np.array([[1, 2], [3, 4]]))
+mat_2 = GenericMatrix(np.array([[6, 7], [8, 9]]))
+
+print(mat_1 * 2)
+# [[2. 4.]
+#  [6. 8.]]
+
+print(mat_1 * mat_2)
+# [[22. 25.]
+#  [50. 57.]]
+
+print(mat_1 + mat_2)
+# [[ 7.  9.]
+#  [11. 13.]]
+
+print(mat_2 - mat_1)
+# [[5. 5.]
+#  [5. 5.]]
+```
+
 [Link to repo](https://github.com/Jtachan/PyMathTools)
 
 ## Covid Friendly Face Detector (CFFD)
