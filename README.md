@@ -15,11 +15,20 @@ Each one has a brief introduction below.
 
 The projects are organized from newest to older.
 
+- [_Rubik's solver_](#rubiks-solver)
 - [*Enigma Cipher*](#enigma-cipher)
 - [*DNN: Range AutoEncoder to Camera(RAE2Cam)*](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/project-AE.md)
 - [*Covid Friendly Face Detector (CFFD)*](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
 - [*6-DoF Vehicle Model Predictor (VMP)*](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/project-VMP.md)
   
+
+## Rubik's solver
+
+The project is a genetic algorithm capable of solving Rubik's cube.
+
+❗ Project in development ❗
+
+[Link to repo](https://github.com/Jtachan/genetic_rubiks_solver)
 
 ## Enigma Cipher
 
