@@ -13,6 +13,8 @@ Every project is identified by:
 Documented projects at this repository.<br />
 Each one has a brief introduction below. 
 
+The projects are organized from newest to older.
+
   - [*Enigma Cipher*](#enigma-cipher)
   - [*Covid Friendly Face Detector (CFFD)*](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
   - [*DNN: Range AutoEncoder to Camera(RAE2Cam)*](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/project-AE.md)
