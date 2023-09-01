@@ -15,10 +15,10 @@ Each one has a brief introduction below.
 
 The projects are organized from newest to older.
 
-  - [*Enigma Cipher*](#enigma-cipher)
-  - [*Covid Friendly Face Detector (CFFD)*](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
-  - [*DNN: Range AutoEncoder to Camera(RAE2Cam)*](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/project-AE.md)
-  - [*6-DoF Vehicle Model Predictor (VMP)*](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/project-VMP.md)
+- [*Enigma Cipher*](#enigma-cipher)
+- [*DNN: Range AutoEncoder to Camera(RAE2Cam)*](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/project-AE.md)
+- [*Covid Friendly Face Detector (CFFD)*](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
+- [*6-DoF Vehicle Model Predictor (VMP)*](https://github.com/Jtachan/CV_projects/blob/main/VMP_6DoF/project-VMP.md)
   
 
 ## Enigma Cipher
@@ -54,18 +54,6 @@ print(text)
 The code is open source, to be found at its [**GitHub repository**](https://github.com/Jtachan/enigma_cipher).<br/>
 The [**documentation**](https://jtachan.github.io/enigma_cipher/) is mkdocs generated, with multiple topics to understand the enigma machine logic and how to correctly use the python package.
 
-## Covid Friendly Face Detector (CFFD)
-Because of Covid-19, a very common sight is that everyone has a mask outside their homes. 
-With the face partially covered, old face detectors might not work.
-
-This project implements a CNN-based face detector with a re-trained 22-face-landmarks shape predictor.
-The goal is to be able to detect any face (with or without a mask) and predict drowsiness at the detected face.
-<br />
-
-[Link to project](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
-
-<img src="covid_drowsiness_detector/imgs/mix_front.png" alt="mix_front" width=500>
-
 ## AutoEncoder: From Lidar-Range to Camera image (RAE2Cam)
 When working with lidar systems at an automotive environment, one of the main problems is to identify the scene at the lidar data.
 This could be an easier problem to solve if the 3D Point Cloud Data (PCD) could be analyzed as an image, because
@@ -78,6 +66,18 @@ An AE is a Convolutional Neural Network (CNN) composed by an encoder, a flat lay
 [Link to project](https://github.com/Jtachan/CV_projects/blob/main/RAE2Cam/project-AE.md)
 
 <img src="RAE2Cam/imgs/range_trained.png" alt="autoencoder" width=500> 
+
+## Covid Friendly Face Detector (CFFD)
+Because of Covid-19, a very common sight is that everyone has a mask outside their homes. 
+With the face partially covered, old face detectors might not work.
+
+This project implements a CNN-based face detector with a re-trained 22-face-landmarks shape predictor.
+The goal is to be able to detect any face (with or without a mask) and predict drowsiness at the detected face.
+<br />
+
+[Link to project](https://github.com/Jtachan/CV_projects/blob/main/covid_drowsiness_detector/project-CFFD.md)
+
+<img src="covid_drowsiness_detector/imgs/mix_front.png" alt="mix_front" width=500>
 
 ## Vehicle Model Predictor with 6-DoF (VMP)
 This was my Final Bachelor's Degree Project at the University.<br />
